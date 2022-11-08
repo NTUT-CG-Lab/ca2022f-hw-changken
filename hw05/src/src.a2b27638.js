@@ -97425,7 +97425,7 @@ class Camera {
 
 
       /*歪頭=>回家自己研究*/
-
+	  view.angleZ = (faces[0].keypoints[226].y - faces[0].keypoints[446].y) / 2; 
 
       /*眼睛控制*/
       if((faces[0].keypoints[145].y)-(faces[0].keypoints[159].y) < 3){
@@ -97442,7 +97442,11 @@ class Camera {
       }
 
       /*嘴巴控制=>回家自己研究*/
-
+	  if((faces[0].keypoints[14].y) - (faces[0].keypoints[13].y) > 3){
+		view.mouthOpenY = 1;
+	  }else{
+		view.mouthOpenY = 0;
+	  }
     });
   }
 }
