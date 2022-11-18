@@ -185,7 +185,9 @@
             transform: translateY(0px);
         }
     }
-
+    img{
+      max-width: 100%;
+    }
 </style>
 </head>
 <body>
@@ -210,7 +212,9 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。
+      再經由本次作業之後，讓我充分體現到原來vtuber直播是一件不容易的事情，
+      還有從hw0~hw5的循序漸進的一個集大成，本次作業中我學習到如何修改學長的程式碼
+      然後再用obs架設基本的直播環境，也謝謝助教辛苦研發著這些作業。
     </div>
   </div>
 
@@ -226,39 +230,37 @@
         </tr>
         <tr>
           <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>1</td>
-          <td>描述</td>
+          <td>安裝OBS Studio
+            <img src="img/0.png" alt="">
+          </td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>1</td>
-          <td>描述</td>
+          <td>修改Live2D人物大小並上傳專案到作品集的src,並有按鈕連結至Demo網站 
+            <img src="img/1.png" alt="">
+          </td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>1</td>
-          <td>描述</td>
+          <td>設置 OBS 畫面 ( 有Live2D人物、直播背景視窗及音訊擷取 )
+            <img src="img/2.png" alt="">
+          </td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
           <td id='m4'>1</td>
-          <td>描述</td>
+          <td>完成 OBS 與 Youtube 的串流設定
+            <img src="img/3.png" alt="">
+          </td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked="checked" ></td>
-          <td id='m5'>2</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox6" checked="checked" /></td>
-          <td id='m6'>2</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox7" checked="checked" /></td>
-          <td id='m7'>2</td>
-          <td>描述</td>
+          <td id='m5'>6</td>
+          <td>以講述自身故事為主題進行 Youtube直播, 並以至少7頁的投影片為背景直播時長至少有1分鐘, 並保留直播存檔</td>
         </tr>
       </table>
     </div>
@@ -288,8 +290,8 @@
   d3.select("#myCheckbox3").on("change",update);
   d3.select("#myCheckbox4").on("change",update);
   d3.select("#myCheckbox5").on("change",update);
-  d3.select("#myCheckbox6").on("change",update);
-  d3.select("#myCheckbox7").on("change",update);
+  //d3.select("#myCheckbox6").on("change",update);
+  //d3.select("#myCheckbox7").on("change",update);
 
   update();
   
@@ -317,6 +319,7 @@
       score += parseInt(d3.select('#m5').html());   
     }
 
+    /*
     if (d3.select("#myCheckbox6").property("checked")){
       score += parseInt(d3.select('#m6').html());   
     }
@@ -324,7 +327,7 @@
     if (d3.select("#myCheckbox7").property("checked")){
       score += parseInt(d3.select('#m7').html());   
     }
-
+*/
     d3.select("#myTotal").html(score);    
   }
 </script>
