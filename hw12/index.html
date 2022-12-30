@@ -195,71 +195,65 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <h1>作業 01</h1>
+      <h1>作業 12</h1>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      作業程式碼，請放在 src 檔案夾。
+      <input type="button" name="back" onclick="window.location.href='https://github.com/NTUT-CG-Lab/ca2022f-hw-changken/tree/main/hw12'" value="...按我...按我...按我...">
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。心得報告 100 字。
+      這是我學習到如何使用animation controller來匯入角色的motion檔案，
+      以及使用mouth script去使用麥克風聲量來控制人物的嘴巴張合，
+      再來就使用透明背景程式來讓cubism人物可以去背，
+      最後使用mediapipe server程式來控制人物的臉部特徵點，
+      總之覺得這次作業很有趣，也很有成就感。
     </div>
   </div>
 
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      <table>
-        <tr>
-          <th>總分</th>
-          <th>完成後打勾</th>
-          <th>配分</th>
-          <th>分項描述</th>
-        </tr>
-        <tr>
-          <td rowspan="7" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
-          <td id='m1'>1</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
-          <td id='m2'>1</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
-          <td id='m3'>1</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
-          <td id='m4'>1</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked="checked" ></td>
-          <td id='m5'>2</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox6" checked="checked" /></td>
-          <td id='m6'>2</td>
-          <td>描述</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox7" checked="checked" /></td>
-          <td id='m7'>2</td>
-          <td>描述</td>
-        </tr>
-      </table>
+      <div class="row hw12">
+        <div class="col-md-12 twenty">
+          <table>
+            <tr>
+              <th>總分</th>
+              <th>完成後打勾</th>
+              <th>配分</th>
+              <th>分項描述</th>
+            </tr>
+            <tr>
+              <td rowspan="4" id="myTotal"></td>
+              <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
+              <td id='m1'>3</td>
+              <td>角色可以輪播三個以上的動畫</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
+              <td id='m2'>2</td>
+              <td>麥克風控制角色的嘴巴</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
+              <td id='m3'>3</td>
+              <td>將背景變透明後build成執行檔</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+              <td id='m4'>2</td>
+              <td>能夠將Cubism Unity with MediaPipe順利執行</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    
     </div>
   </div>
 
@@ -267,7 +261,10 @@
   <div class="row hw12">
     <div class="col-md-12 twenty">
       <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="./video/110598028_simple_medium.webm" type="video/mp4">
+      </video>
+      <video id="video2" style="width:100%;max-width:100%;" controls="">
+        <source src="./video/110598028_strong.mkv" type="video/mp4">
       </video>
     </div>
   </div>
